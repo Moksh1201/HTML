@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+		.Workspace {
+			position: relative;
+			width: 100%;
+		}
+        .representativelogo{
+            width: 100%;
+            align-content: center;
+            position: relative;
+        }
+
+        .Myself{
+            position: absolute;
+            top: 70%;
+            bottom: 0;
+            left: 50;
+            right: 0;
+            height: 5%;
+            width: 100%;
+            opacity: 0;
+            transition: .5s ease;
+            background-color: rgb(15, 14, 14);
+            
+        }
+        
+		.text {
+            color: white;
+            position: absolute;
+            top: 80%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            width: max-content;
+            opacity: 1;
+			
+		}
+
+        .Workspace:hover .Myself {
+            opacity: 0.7;
+        }
+
+        .Display {
+            text-align: center;
+            }
+
+            .intro {
+            font-size: 1.5em;
+            margin: 0;
+            padding: 20px 0;
+            }
+
+            .work {
+            font-size: 1.2em;
+            margin: 0;
+            padding: 10px 0;
+            }
+
+		/* .image {
+			display: block;
+			max-width: 100%;
+			height: auto;
+		} */
+        /* .Display {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            grid-gap: 10px;
+        }*/
+    
+        .projimage{
+          display: block;
+          margin: 0 auto;
+          position: center;
+
+        } 
+        
+        .Profile{
+            display: block;
+            margin-right: 55%;
+            margin-left: 45%;
+            border-radius: 20%;
+            
+        }
+
+        .protable{
+     
+            background-color: #ccc; 
+            border: 2px solid #000;
+           
+        }
+        
+        .description{       
+            padding: 10px;
+            margin-bottom: 20px;
+            font-family: Arial, sans-serif;
+            font-size: 16px;
+            line-height: 1.5;
+            color: rgb(173, 134, 118);
+        }
+        hr{ border: none; 
+            border-top: 2px solid #ccc; 
+            width: 50%; 
+            margin: 20px auto;
+    }
+
+        
+	</style>
+</head>
+<body>
+    <header>
+        <section>
+            <!-- navigation -->
+            <nav class="topnav">
+                <a href="" class="active">Home</a>
+                <a href="">About</a>
+                <a href="">Work</a>
+                <a href="">Contact</a>
+            </nav> 
+        </section>
+        <br>
+        <div class="Workspace">
+            <img src="logo.png" class="representativelogo" alt="">
+
+            <div class="Myself">
+                <div class="text">Hey, I'm Moksh</div>
+
+
+            </div>
+        </div>
+    </header>
+    <article>
+        <section>
+          <hr>
+            <div>
+                
+                <img src="myself.png" alt="" class="Profile" width="100">
+                <div class="Display">
+                    <p class="intro">I am a Software Engineering Student based in Chitkara University, India</p>
+                    <p class="work">Here is some of my work:</p>
+                  </div>
+            </div>
+        </section>
+        <section>
+       <table class="protable">
+            <tr>
+                <td>
+                    <h4>WheelyGuardium</h4>
+                    <div class = "projimage">
+                        <img src="WheelyGuardium.jpeg" class = "projimage" alt="" width="150"height="150">
+                      </div>
+                </td>
+                <td>
+                    <div class="description">
+                        <p > WheelyGuardium : An Arduino nano based project which is equipped with thermal camera and smoke detector with GPS enabled system which can be used if there is any kind of move movement and smoke is detected we can check through virtual panel live thermal imaging </p>
+                       </div>
+                </td>
+            </tr>
+            <br>
+            <tr>
+                <td>
+            <hr>
+
+                    <h4>The REEF</h4>
+                    <div class = "projimage">
+                        <img src="The Reef.jpeg" class = "projimage" alt="" width="50%">
+                      </div>
+                </td>
+                <td>
+                    <div class="description">
+                        <p >Aquarium : An automated aquarium system attached with automatic lighting , Food despensing and pH control system which can be easily used to lazy, busy or people who travel a lot it comes with an attached sytem if the ph value is get extremely out of control or its out of food</p>
+                       </div>
+                </td>
+            </tr>
+        </table>
+    </section>
+    <Section>
+        <hr>
+        <h3>My Photos:</h3>
+        <img src="image1.jpg" class = "pic" alt="CU1" width="125" height="80">
+        <img src="image2.jpg" class = "pic" alt="CU2" width="125" height="80">
+        <img src="image3.jpg" class = "pic" alt="CU3" width="125" height="80">
+        <img src="image4.jpg" class = "pic" alt="CU5" width="125" height="80">
+    </Section>
+</body>
+</html>
+
+
+
+    
