@@ -1,0 +1,169 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.header
+{
+  background-color: rgb(175, 178, 180);
+}
+
+.Opt{
+  margin-left: 4%;
+}
+
+.ques
+{
+    margin-left: 8%;
+}
+.coloredtext
+{
+   color: red;
+   display: inline-block;
+   padding-inline: 3px;
+}
+
+.QuesAns
+{
+    width: 74%;
+    padding-inline-start: 4px;
+    padding: 8px;
+}
+
+.textarea-container {
+  width: 100%;
+  max-width: 600px; 
+  padding-left: 24px;
+  
+ 
+}
+
+.custom-textarea {
+  width: 188%;
+  height: 100%;
+  overflow: auto;
+  margin-bottom: 2%;
+  position: relative;
+  padding-bottom:-70px ;
+  padding: 5px;
+  resize: vertical;
+
+}
+
+.custom-textarea1 {
+  width: 188%;
+  height: 100%;
+  overflow: auto;
+  margin-bottom: 2%;
+  position: relative;
+  padding-bottom:-70px ;
+  padding: 5px;
+  resize: vertical;
+  
+
+
+}
+/* .describe{
+  margin-left: 2%;
+  font-size: 20px;
+  margin: 1%;
+  padding: 10px;
+} */
+.describe1{
+  
+  font-size: 20px;
+  margin-bottom: 3%;
+  margin-bottom: 20px;
+  font-weight: 30;
+  
+}
+
+.button-container {
+  display: flex;
+  margin-left: 70%; 
+   
+  padding-top: 10px;
+}
+
+.styled-button {
+  padding: 10px 40px; 
+  background-color: rgb(158, 155, 155);
+  border-radius: 5px; 
+  font-size: 16px; 
+  cursor: pointer;
+}
+
+.styled-button:hover {
+  background-color: #e4e4e9; 
+  color: #656060;
+}
+.tagstyle
+{
+  padding-inline-start: 4px;
+  padding: 20px;
+}
+
+.header{
+  padding-left: 15px;
+}
+
+
+.tagstyle
+{
+  font-size: 25px;
+}
+
+.ui-block-header{
+    font-size: 25px;
+    font-weight: 30;
+    background-color: rgb(175, 178, 180);
+    padding-left: 15px;
+    
+}
+.desc{
+  padding-left: 8px;
+}
+
+
+.header
+{
+  font-size: 25px;
+}
+
+.p{
+  font-size: 18px;
+  padding: 10px;
+}
+
+.ques{
+
+  font-size: 25px;
+  
+}
+
+.Option{
+  font-size: 25px;
+}
+
+.custom-textarea
+{
+  width: 188%;
+}
+
+.option-container
+{
+  font-size: 25px;
+  padding: 5px;
+}
+
+
+
