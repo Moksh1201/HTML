@@ -1,0 +1,661 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+code {
+  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+    monospace;
+}
+
+.header
+{
+  background-color: rgb(175, 178, 180);
+}
+
+.Opt{
+  margin-left: 4%;
+}
+
+.ques
+{
+    margin-left: 8%;
+}
+.coloredtext
+{
+   color: red;
+   display: inline-block;
+   padding-inline: 3px;
+}
+
+.QuesAns
+{
+    width: 74%;
+    padding-inline-start: 4px;
+    padding: 8px;
+}
+
+.textarea-container {
+  width: 100%;
+  max-width: 600px; 
+  padding-left: 24px;
+  
+ 
+}
+
+.custom-textarea {
+  width: 188%;
+  height: 100%;
+  overflow: auto;
+  margin-bottom: 2%;
+  position: relative;
+  padding-bottom:-70px ;
+  padding: 5px;
+  resize: vertical;
+
+}
+
+.custom-textarea1 {
+  width: 188%;
+  height: 100%;
+  overflow: auto;
+  margin-bottom: 2%;
+  position: relative;
+  padding-bottom:-70px ;
+  padding: 5px;
+  resize: vertical;
+  
+
+
+}
+/* .describe{
+  margin-left: 2%;
+  font-size: 20px;
+  margin: 1%;
+  padding: 10px;
+} */
+.describe1{
+  
+  font-size: 20px;
+  margin-bottom: 3%;
+  margin-bottom: 20px;
+  font-weight: 30;
+  
+}
+
+.button-container {
+  display: flex;
+  margin-left: 70%; 
+   
+  padding-top: 10px;
+}
+
+.styled-button {
+  padding: 10px 40px; 
+  background-color: rgb(158, 155, 155);
+  border-radius: 5px; 
+  font-size: 16px; 
+  cursor: pointer;
+}
+
+.styled-button:hover {
+  background-color: #e4e4e9; 
+  color: #656060;
+}
+.tagstyle
+{
+  padding-inline-start: 4px;
+  padding: 20px;
+}
+
+.header{
+  padding-left: 15px;
+}
+
+
+.tagstyle
+{
+  font-size: 25px;
+}
+
+.ui-block-header{
+    font-size: 25px;
+    font-weight: 30;
+    background-color: rgb(175, 178, 180);
+    padding-left: 15px;
+    
+}
+.desc{
+  padding-left: 8px;
+}
+
+
+.header
+{
+  font-size: 25px;
+}
+
+.p{
+  font-size: 18px;
+  padding: 10px;
+}
+
+.ques{
+
+  font-size: 25px;
+  
+}
+
+.Option{
+  font-size: 25px;
+}
+
+.custom-textarea
+{
+  width: 188%;
+}
+
+.option-container
+{
+  font-size: 25px;
+  padding: 5px;
+}
+
+
+
+#navTopnav {
+  background-color: #333;
+  color: white;
+  padding: 10px;
+}
+
+#logo {
+  font-size: 24px;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+#search-container {
+  background-color: #fff;
+  border: solid 1px black;
+  padding: 5px;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  margin-left: 4px;
+  margin-top: 4px;
+  width: 98%
+
+}
+
+#search-Topnav {
+  flex: 1;
+  padding: 8px;
+  border: none;
+  border-radius: 5px;
+}
+
+#search-button, #questions-button {
+  background-color: #007BFF;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+
+#search-button:hover, #questions-button:hover {
+  background-color: #0056b3;
+}
+
+#filter-container {
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+  margin-top: 10px;
+  display: none; /* Initially hide the filter container */
+}
+
+.filter-input {
+  width: 70%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: solid 2px black;
+  border-radius: 5px;
+}
+
+#random-questions {
+  margin-top: 20px;
+  display: none; /* Initially hide the random questions */
+  background-color: #fff;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.question {
+  margin-bottom: 20px;
+  display: flex;
+  align-items: center;
+}
+
+.question-title {
+  font-size: 18px;
+  font-weight: bold;
+  color: #333;
+  flex: 1;
+}
+
+.question-details {
+  margin-left: 20px;
+  color: #666;
+}
+
+.question-image {
+  max-width: 100px;
+  margin-right: 20px;
+  border-radius: 5px;
+}
+
+.solve-button {
+  background-color: #28a745;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  padding: 8px 16px;
+  cursor: pointer;
+}
+
+.solve-button:hover {
+  background-color: #218838;
+}
+
+
+.article {
+  width: 220px;
+  padding: 10px;
+  border: 1px solid #ccc;
+  background-color: #fff;
+  margin: 10px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  text-align: center;
+}
+
+.article img {
+  width: 220px;
+  height: 250px;
+}
+
+.article h3 {
+  font-size: 18px;
+  margin: 10px 0;
+}
+
+.article p {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+#star {
+  margin-top: 10px;
+}
+
+#star img {
+  width: 15px;
+  height: 15px;
+  margin-right: 5px;
+}
+
+
+/* QuestionList.css */
+
+/* Styling for the container */
+.filter-container {
+  display: flex;
+
+  margin-bottom: 20px;
+}
+
+/* Styling for the input boxes */
+.filter-input {
+  margin-right: 10px;
+  padding: 8px;
+
+}
+
+/* Styling for the filter buttons */
+.filter-button {
+  background-color: #007bff;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 20px;
+  height: 40px;
+}
+
+.filter-button:hover {
+  background-color: #0056b3;
+}
+
+/* Styling for the sort and clear buttons */
+.button-container1 {
+  margin-top: 10px;
+}
+
+.sort-button,
+.clear-button {
+  
+  background-color: #28a745;
+  color: #fff;
+  cursor: pointer;
+  padding: 10px 20px;
+  border: none;
+  margin-right: 10px;
+}
+
+.sort-button:hover,
+.clear-button:hover {
+  background-color: #1e7e34;
+}
+
+
+@font-face {
+  font-family: "iconfont"; /* Project id 3599681 */
+  src: url('//at.alicdn.com/t/c/font_3599681_5t82tliame6.woff2?t=1660988709459') format('woff2'),
+       url('//at.alicdn.com/t/c/font_3599681_5t82tliame6.woff?t=1660988709459') format('woff'),
+       url('//at.alicdn.com/t/c/font_3599681_5t82tliame6.ttf?t=1660988709459') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-xingxingx:before {
+  content: "\e60c";
+}
+
+.icon-search:before {
+  content: "\e82e";
+}
+
+
+
+/* index.css */
+
+/* Add a CSS class for the container */
+.container {
+  max-width: 96%;
+  padding: 0 10px; /* Adjust padding for responsive layout */
+  box-sizing: border-box;
+}
+
+/* Style the searchTopnav section */
+.searchTopnav {
+  display: flex;
+  align-items: center;
+  background-color: #e0d9d9; /* Light grey background color */
+  padding: 15px;
+}
+
+/* Style the label */
+.searchTopnav label {
+  font-size: 20px;
+  margin-right: 15px;
+}
+
+/* Style the input field */
+.custom-input {
+  flex: 1; /* Take up remaining space */
+  padding: 5px 10px;
+}
+
+/* Style the "Post" button */
+.B3 {
+  background-color: #bbb3b3;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  padding: 10px 20px;
+  margin-left: 10px;
+  cursor: pointer;
+   /* Add a smooth transition effect */
+}
+
+h4{
+  padding: 5px;
+}
+
+.B3:hover {
+  background-color: #a3abb4; /* Darker blue on hover */
+}
+
+/* Style the "Login" button */
+.B2 {
+  background-color: #6f7470;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 15px;
+  margin-left: 10px;
+  cursor: pointer;
+   /* Add a smooth transition effect */
+}
+
+.B2:hover {
+  background-color: #949895; /* Darker green on hover */
+}
+
+
+.value
+{
+  display: inline;
+}
+
+a{
+  text-decoration: none;
+}
+
+
+
+.Image-part{
+   padding: 20px;
+   
+}
+
+
+/* Featured*/
+h1{
+  margin-left: 39.5%;
+  margin-top: 10px;
+}
+
+#star *{
+  vertical-align:middle;
+  font-size: 14px; 
+}
+
+.Article{
+  display: flex;
+  
+}
+
+.article {
+  width: calc(33%);
+  float: left;
+  margin: 10px;
+  padding: 20px;
+  margin-inline-start: 137px;
+ 
+}
+
+.article-title {
+  font-weight: bold;
+  margin-top: 10px;
+}
+.article-description {
+  margin-top: 5px;
+}
+.article-rating {
+  float: left;
+}
+.article-author {
+  float: right;
+}
+
+
+.see{
+  width:180px;
+  height:30px;
+  font-size: large;
+  background-color: rgb(173, 170, 167);
+  border-radius: 50px;
+  margin-left: 42%;
+  border-style: 1px;
+  margin-top: 15px;
+}
+
+
+/*Email*/
+.foot-text{
+  height:40px;
+  width: auto;
+  float: left;
+  /* margin-right: 30px; */
+  font-size: 20px;
+  
+}
+
+.Footer-last>h2 {
+  margin-left: 0; /* Remove the left margin */
+}
+
+.wrapw
+{
+  display: inline;
+  
+}
+
+.Footer-last>ul {
+  
+  padding: 0; /* Remove default padding for the list */
+}
+
+.Footer-last>ul>li {
+  display: inline-block; /* Display list items horizontally */
+  margin-inline: 200px;
+}
+
+
+
+.subscribe>input{
+  width:67%;
+  height:39px;
+  padding: 0 10px;
+  border: 1px solid rgb(0, 0, 0);
+  outline: none;
+  float: left;
+  margin-left: 1%;
+  display: inline;
+  
+
+}
+.subscribe>button{
+  width:auto;
+  height: 40px;
+  background-color:#fff ;
+  border: 2px solid rgb(0, 0, 0);
+  float:right;
+  border-radius: 2px;
+  background-color: rgb(161, 154, 154);
+  
+}
+.subscribe{
+  padding-top: 10px;
+}
+.nava{
+  width:100%;
+  height: 59px;
+  background-color: rgb(188, 185, 181,0.6);
+  
+  
+}
+
+.foot-button{
+  margin-right: 2%;
+}
+
+
+/*Foot*/
+.wrapa {
+  width: 100%;
+  height: 400px;
+  background-color: rgb(94, 200, 200); /* Change the color to a darker shade */
+}
+
+.left-foot,
+.middle-foot,
+.Footer-rigthS {
+  width: 30%; /* Adjust the width to your preference */
+  height: 300px;
+  float: left;
+  margin-left: 2%; /* Adjust the margin as needed */
+}
+
+.left-foot>ul>li {
+  list-style: none;
+  font-weight: 500;
+  margin: 20px 0;
+}
+
+.middle-foot>ul>li {
+  margin-left: 5px;
+}
+
+.last-foot {
+  width: 100%;
+  height: 100px;
+  margin: 0 auto; /* Center the .Footer-last horizontally */
+  text-align: center; /* Center the content inside .Footer-last */
+}
+
+.last-foot {
+  display: flex;
+  flex-direction: column;
+  align-items: center; /* Center-align the heading */
+}
+
+.last-foot h2 {
+  margin-bottom: 10px; /* Add margin below the heading */
+}
+
+.last-foot ul {
+  list-style: none; /* Remove bullet points from the list */
+  padding: 0; /* Remove default padding from the list */
+  margin: 0; /* Remove default margin from the list */
+}
+
+.last-foot li {
+  margin-right: 15px; /* Add margin between list items */
+  display: inline; /* Display list items inline */
+  margin-inline: 60px;
+}
+
+.last-foot a {
+  text-decoration: none; /* Remove underline from links */
+  color: #333; /* Set link color */
+}
+
+.last-foot a:hover {
+  text-decoration: underline; /* Add underline on hover for links */
+}
+
+.right-foot>h2{
+  padding-top: 18px;
+}
