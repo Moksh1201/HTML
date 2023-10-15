@@ -1,0 +1,316 @@
+body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
+  
+  body {
+    margin: 0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
+      'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+      sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  
+  code {
+    font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+      monospace;
+  }
+  
+  .value
+  {
+    display: inline;
+  }
+  
+  a{
+    text-decoration: none;
+  }
+  
+  
+  
+  /*navigation bar*/
+  
+  body {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Style for the navigation bar */
+  .nav {
+    width: 100%;
+    background-color: rgba(188, 185, 181, 0.6);
+  }
+  
+  /* Center everything horizontally and align text/elements vertically */
+  .wrap1 {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px;
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  
+  /* Style for the "Dev@Deakin" heading */
+  h4 {
+    margin: 0;
+    font-size: 24px;
+  }
+  
+  /* Style for the search input and button */
+  .search {
+    display: flex;
+    align-items: center;
+    flex-grow: 1; /* Allow the search input to grow and occupy remaining space */
+  }
+  
+  .search input[type="text"] {
+    width: 90%;
+    padding: 12px;
+    outline: none;
+  }
+  
+  .search button {
+    background-color: rgba(188, 185, 181, 0.6);
+    cursor: pointer;
+  }
+  
+  .search button:hover {
+    background-color: rgb(99, 96, 94);
+  }
+  
+  /* Style for the navigation links */
+  .nav-bar ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+  }
+  
+
+  
+
+  .nav-bar a:hover {
+    color: rgb(95, 93, 91);
+    font-size: larger;
+  }
+  
+  .modal {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5); /* Semi-transparent background */
+    z-index: 1;
+  }
+  
+  .modal-content {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.3);
+    width: 300px;
+  }
+  
+  .close {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    cursor: pointer;
+    font-size: 24px;
+    color: #333;
+  }
+  
+  h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  input {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  button {
+    width: 90%;
+    padding: 10px;
+    background-color: #007bff; /* Blue button color */
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  button:hover {
+    background-color: #0056b3; /* Darker blue on hover */
+  }
+  
+  
+  .login-popup {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.5); /* Semi-transparent background overlay */
+    z-index: 1000; /* Ensure it's on top of everything */
+  }
+  
+  .login-container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+  
+    width: 500px;
+    height: 450px;
+    text-align: center;
+  }
+  
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+  }
+  
+  .input-container {
+    margin-bottom: 15px;
+    text-align: left;
+  }
+  
+  label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  
+  input {
+    width: 90%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  /* button {
+    background-color: #007bff;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+  } */
+  
+  button:hover {
+    background-color: #0056b3; /* Darker shade on hover */
+  }
+  
+  .signup-button {
+    float: left;
+    margin-left: 80%;
+    text-align: center;
+    font-size: 12px;
+    width: 15%;
+    
+  }
+  
+  
+  
+  .signup-popup {
+    background-color: rgba(85, 85, 85, 0.8); /* Semi-transparent background */
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .signup-container {
+    background-color: #fff;
+    padding: 20px;
+    width: 600px; /* 90% width of the button and input box */
+    
+    height: 450px;
+    box-shadow: 0 4px 8px rgba(244, 240, 240, 0.886);
+    border-radius: 5px;
+  
+    flex-direction: column; /* Center the content vertically */
+    align-items: center; /* Center the content horizontally */
+  }
+  
+  .signup-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  /* Style for the close button */
+  .close-btn {
+    position: absolute;
+    top: 10px;
+    font-size: 20px;
+    cursor: pointer;
+  }
+  
+  /* Style the input fields */
+  .input-container {
+    margin-bottom: 15px;
+    width: 100%; /* Make inputs take 100% width */
+  }
+  
+  .input-container label {
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+  }
+  
+  .input-container input {
+    width: 95%; /* Make inputs take 100% width */
+    padding: 8px;
+    border: 1px solid #d2cdcd;
+    border-radius: 4px;
+  }
+  
+  /* Style the submit button */
+  .b1
+  {
+    margin-left: 5%;
+  }
+  button:hover {
+    background-color: #0056b3;
+  }
+  
+  .outB1
+  {
+    margin-left: 3%;
+    width: 10%;
+  }
