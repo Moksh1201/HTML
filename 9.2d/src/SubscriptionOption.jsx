@@ -1,39 +1,41 @@
 import React from "react";
-import { CardElement, useStripe, useElements } from "@stripe/react-stripe-js";
+import SubscriptionCard from "./SubscriptionCard";
 
-const SubscriptionOption = ({ priceId, onSubscribe }) => {
-  const stripe = useStripe();
-  const elements = useElements();
+const SubscriptionOptions = () => {
+  const freePlan = {
+    title: "Basic Plan",
+    price: 1,
+    currency: "₹",
+    description: "Access basic articles and updates for free.",
+    subscribeLink: "https://buy.stripe.com/test_fZe2b5cto3CpcRG3cc",
+  };
 
-  const handleSubmit = async (e) => {
-    e.preventDefault();
+  const premiumPlan1 = {
+    title: "Premium Plan A",
+    price: 49.99,
+    currency: "₹",
+    description: "Get unlimited access to premium articles and daily updates.",
+    subscribeLink: "https://buy.stripe.com/test_fZe3f90KGc8V9Fu6op",
+  };
 
-    if (!stripe || !elements) {
-      // Stripe.js has not loaded yet. Make sure to load it in your index.html
-      return;
-    }
-
-    // Handle payment with Stripe, e.g., create a PaymentMethod, confirm the PaymentIntent
-    // You'll need to integrate this with your Stripe backend
-
-    // Once payment is successful, call onSubscribe with the selected priceId
-    onSubscribe(priceId);
+  const premiumPlan2 = {
+    title: "Premium Plan B",
+    price: 149.99,
+    currency: "₹",
+    description: "Unlock premium articles, daily updates, and exclusive content.",
+    subscribeLink: "https://buy.stripe.com/test_fZe02Xdxs6OB5pe28a",
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <h2>Subscription Option</h2>
-      <div className="subscription-option">
-        {/* Render subscription details, e.g., plan name, price, features */}
+    <div>
+
+      <div style={{ display: "flex", justifyContent: "center" }}>
+        <SubscriptionCard {...freePlan} />
+        <SubscriptionCard {...premiumPlan1} />
+        <SubscriptionCard {...premiumPlan2} />
       </div>
-      <div className="subscription-payment">
-        <CardElement options={{ /* Customize card element styling */ }} />
-        <button type="submit" disabled={!stripe}>
-          Subscribe
-        </button>
-      </div>
-    </form>
+    </div>
   );
 };
 
-export default SubscriptionOption;
+export default SubscriptionOptions;

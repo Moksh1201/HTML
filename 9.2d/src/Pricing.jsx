@@ -1,14 +1,15 @@
 import React from "react";
-import { loadStripe } from "@stripe/stripe-js";
 import { Elements } from "@stripe/react-stripe-js";
+import { loadStripe } from "@stripe/stripe-js";
 import SubscriptionOption from "./SubscriptionOption";
-import "./Pricing.css"; 
-const stripePromise = loadStripe("YOUR_STRIPE_PUBLISHABLE_KEY");
+
+
+// Load your Stripe public key once in Pricing.js
+const stripePromise = loadStripe("pk_test_51O2ZkNSCIg3CTOdnyBPcG5RHKK3RvzuCK6QMR1uMNbuiO18ZeaP1DiXfJ0Qty4vds25OknNjrX94yqWsOjb7RQiq00vDSKE1KF");
 
 const Pricing = () => {
   const handleSubscribe = (priceId) => {
-    // Redirect to the payment page with the selected priceId
-    // You can use React Router for navigation
+    // Handle subscription logic here
   };
 
   return (
@@ -16,11 +17,7 @@ const Pricing = () => {
       <h1>Subscription Plans</h1>
       <Elements stripe={stripePromise}>
         <SubscriptionOption
-          priceId="price_1abcdefg" // Replace with your Stripe price IDs
-          onSubscribe={handleSubscribe}
-        />
-        <SubscriptionOption
-          priceId="price_2hijklmn" // Replace with your Stripe price IDs
+          priceId="price_1abcdefg" 
           onSubscribe={handleSubscribe}
         />
       </Elements>
